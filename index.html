@@ -24,15 +24,15 @@
                     </div>  
                     <div class="col-5 mb">
                         <label for="card">Card #</label>
-                        <input id="card" class="form-control" placeholder="xxxxxxxxxxxxxxxxxxxxx">                
+                        <input id="card" class="form-control" placeholder="xxxxxxxxxxxxxxxxxxxxx" name="card" minlength="4" maxlength="16" size="16" required>                
                     </div>
                     <div class="col-3 mb">
                         <label for="cvc">CVC #</label>
-                        <input id="cvc" class="form-control" placeholder="0000">                
+                        <input id="cvc" class="form-control" placeholder="0000" minlength="4" maxlength="16" size="16" required>                
                     </div>
                     <div class="col-4 mb">
                         <label for="amount">Amount</label>
-                        <input id="amount" class="form-control" placeholder="Amount">
+                        <input id="amount" class="form-control" placeholder="Amount" required>
                     </div>
                 </div>
             </div>
@@ -41,11 +41,11 @@
                 <div class="row gx-5">
                     <div class="col-6">
                         <label for="first-name">First Name</label>
-                        <input id="first-name" type="text" class="form-control" placeholder="">
+                        <input id="first-name" type="text" class="form-control" placeholder="" name="first-name" required>
                     </div>
                     <div class="col-6">
                         <label for="last-name">Last Name</label>
-                        <input id="last-name" type="text" class="form-control" placeholder="">
+                        <input id="last-name" type="text" class="form-control" placeholder="" name="last-name" required>
                     </div>
                 </div>
             </div>
@@ -54,11 +54,11 @@
                 <div class="row justify-content-center">
                     <div class="col-6">
                         <label for="city">City</label>
-                        <input id="city" type="text" class="form-control" placeholder="">
+                        <input id="city" type="text" class="form-control" placeholder="" name="city" required>
                     </div>
                     <div class="col-3">
                         <label for="state" class="form-label mb-0">State</label>
-                        <select id="state" class="form-control" required >
+                        <select id="state" class="form-control" required name="state">
                             <option>Pick a state</option>
                             <option>California</option>
                             <option>Florida</option>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="col-3">
                         <label for="postal-code">Postal Code</label>
-                        <input id="postal-code" class="form-control" placeholder="">
+                        <input id="postal-code" class="form-control" placeholder="" name="postal-code" required>
                     </div>    
                 </div>
             </div>
@@ -74,19 +74,23 @@
             <div class="container mb-3">
                 <div class="row">
                     <div class="col-6">
-                        <label for="pay">We accept:</label>
+                        <p>We accept:</p>
                         <div class="p-none m-none">
                             <button type="button" class="btn btn-secondary">
-                                <input id="pay" type="radio" value="mastercard" name="mastercard"><i class="fa-brands fa-cc-mastercard"></i>
+                                <input id="pay1" type="radio" value="mastercard" name="pago"><i class="fa-brands fa-cc-mastercard"></i>
+                                <label for="pay1"></label>
                             </button>
                             <button type="button" class="btn btn-secondary">
-                                <input id="pay" type="radio" value="visa" name="visa"></i><i class="fa-brands fa-cc-visa"></i>
+                                <input id="pay2" type="radio" value="visa" name="pago"></i><i class="fa-brands fa-cc-visa"></i>
+                                <label for="pay2"></label>
                             </button>
                             <button type="button" class="btn btn-secondary">
-                                <input id="pay" type="radio" value="ni-idea" name="diners-club"><i class="fa-brands fa-cc-diners-club"></i>
+                                <input id="pay3" type="radio" value="ni-idea" name="pago"><i class="fa-brands fa-cc-diners-club"></i>
+                                <label for="pay3"></label>
                             </button>
                             <button type="button" class="btn btn-secondary">
-                                <input id="pay" type="radio" value="american-xpress" name="american-xpress"><i class="fa-brands fa-cc-amex"></i>
+                                <input id="pay4" type="radio" value="american-xpress" name="pago"><i class="fa-brands fa-cc-amex"></i>
+                                <label for="pay4"></label>
                             </button>    
                         </div>        
                     </div>
